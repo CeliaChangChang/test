@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>to string</title>
+    <script type="text/javascript">
+
+        function Person(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+
+        //修改Person  原型的toString
+        Person.prototype.toString = function () {
+            return "Person[name=" + this.name + ",age=" + this.age + ",gender=" + this.gender + "]"
+        };
+
+        //创建一个Person实例
+        var per = new Person("孙悟空", 18, "男");
+        var per2 = new Person("猪八戒", 28, "男");
+        //当我们直接在页面中打印一个对象时，实际上是输出的对象的to String（）方法的返回值
+        //如果我们希望输出对象是不输出[object object]，可以为对象添加一个toString()方法
+        per.toString = function () {
+            return "Person[name=" + this.name + ",age=" + this.age + ",gender=" + this.gender + "]"
+        };
+
+        var result = per.toString();
+        console.log("result=" + result);
+        //console.log(per.toString());
+        console.log(per2);
+        console.log(per);
+        //console.log(per.__proto__.__proto__.hasOwnProperty("toString"))
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

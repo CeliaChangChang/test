@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for 循环</title>
+    <script type="text/javascript">
+        /*
+         *  for 循环
+         *    1.初始化表达式
+         *    2.条件表达式
+         *    3.更新表达式
+         *  语法：
+         *     for（初始化表达式；条件表达式；更新表达式）{
+         *        语句...
+         *     }
+         *     for 循环的执行流程：
+         *       1.执行初始化的表达式，初始化变量（初始化表达式只会执行一次）
+         *       2.执行条件表达式，判断是否执行循环
+         *          如果为true，则执行循环
+         *          如果为false，则终止循环
+         *       3.执行更新表达式，更新表达式执行完毕继续重复第二步
+         *
+         *
+         *
+         *    质数（Prime number），又称素数，指在大于1的自然数中，除了1和该数自身外，
+         * 无法被其他自然数整除的数（也可定义为只有1与该数本身两个正因数的数）。
+         * 大于1的自然数若不是素数，则称之为合数（也称为合成数）。
+         */
+
+
+
+        //创建一个执行10次的while循环
+        //初始化表达式
+        var i = 0;
+        //创建一个循环，定义条件表达式
+        /*while (i<10){
+            alert(i++);
+        }*/
+        /*
+        for (var i = 0;i<10;i++){
+            alert(i);
+        }
+         */
+
+        /*
+         *for循环中的三个部分都可以省略，也可以写在外部
+         *  如果在for循环中不写任何的表达式，只写两个；此时为死循环，慎用
+         *  for (;;){
+         *   alert("hello");
+         *    }
+         */
+
+
+
+        /*例1：
+         *打印1-100之间所有奇数之和
+         */
+        //创建一个变量，用来保存奇数之和
+        /*
+        var sum=0;
+        for (i=1;i<=100;i++) {
+            //不能被2整除的是奇数
+            if (i %2!=0){
+                //console.log(i);
+                sum=sum+i;
+
+            }
+            console.log("奇数之和："+sum);
+        }
+        */
+
+
+
+        /*
+         * 例2：
+         *打印1-100之间所有7的倍数的个数及总和
+         */
+
+        /*
+        var count = 0;
+        for (i = 1; sum = 0; i <= 100; i++) {
+            if (i % 7 == 0) {
+                sum += i;
+                //console.log(i);
+                count++;
+            }
+        }
+        //输出总和
+        console.log("7的倍数之和：" + sum);
+        //输出总数
+        console.log("7的倍数的个数：" + count);
+         */
+
+
+        /*例四：
+         * 水仙花数
+         *    水仙花数是指一个3位数，他的每个位上的数字的3次幂之和等于他本身
+         *    （例如：1^3+5^3+3^3=153）,请打印所有的水仙花数
+         */
+
+        /*
+       for (i = 100; i < 1000; i++) {
+           //百位
+           var hundreds = parseInt(i / 100);
+           //十位
+           var decade = parseInt(i % 100 / 10);
+           //个位
+           var unit = parseInt(i % 10);
+
+           if (hundreds * hundreds * hundreds + decade * decade * decade + unit * unit * unit == i) {
+               console.log(i);
+           }
+       }*/
+
+
+
+        /*
+         * 例五：
+         *  在页面中接收一个用户输入的数字，并判断该数是否是质数
+         * 质数： 只能被1和它自身整除的数，1不是质数也不合数，质数必须是大于1的自然数
+         */
+
+
+      /*
+        判断是否是质数方法一：
+        var num = prompt("请输入一个自然数");
+        //判断这个值是否合法
+        if (num <= 1) {
+            alert("该值不合法");
+        } else {
+            //创建一个变量来保存当前数的状态
+            var flog = true;
+            for (i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    alert(num + "不是质数");//判断num一定不是质数
+                    flog = false;
+                }
+            }
+            if (flog) {
+                alert(num + "是质数！");
+            }
+        }*/
+
+
+
+      /* 判断是否是质数方法二：
+        //判断该数所有因数的和是否等于1和它本身的和
+       var num = parseInt(prompt("请输入一个数"));
+        var sum = 0;
+        for (i = 1; i <= num; i++) {
+            if (num % i === 0) {
+                sum += i;
+            }
+        }
+        if (sum === (1 + num)) {
+            alert(num + "是质数");
+        }*/
+
+
+
+        /*判断是否是质数方法三：
+       //判断因数的个数是否等于2
+     var num = parseInt(prompt("请输入一个数"));
+     var count = 0;
+     for(var i=1; i<=num; i++) {
+         if(num%i === 0) {
+             count++;
+         }
+     }
+     if(count === 2){
+         alert(num + "是质数");
+     }
+         */
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

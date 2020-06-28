@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break和continue</title>
+    <script type="text/javascript">
+        /*
+         * break关键字，可以用来退出switch或循环语句
+         *  不能在if语句中使用break 和continue
+         *
+         * break关键字会立即终止离他最近的那个循环语句
+         */
+
+
+        /*
+         *可以为循环语句创建一个label，来标识当前的循环
+         * label：循环循环语句
+         * 使用break语句时，可以在break语句后跟着一个label
+         *  这样break将会结束指定的循环，而不是最近的
+         */
+        /*
+        outer:
+        for (var i=0;i<5;i++){
+            console.log("@外层循环："+i);
+            for (var j = 0;j<5;j++){
+                break outer;
+                console.log("@内层循环："+j);
+
+            }
+        }*/
+        /*
+         *continue关键字可以用来跳过当次循环
+         *  同样continue也是默认只会对离他最近的循环起作用
+         */
+
+        /*
+        for (i = 0; i < 5; i++) {
+            //console.log(i);
+            if (i == 2) {
+                continue;
+            }
+            console.log(i);
+        }*/
+
+        /*质数练习提升
+         *
+         *
+         * 打印出1-100之间的质数
+         */
+
+
+        //测试如下程序的性能，用console.time("计时器名字");他需要一个字符串作为一个参数，这个字符串会作为计时器的标识
+        //在程序执行前开启计时器
+
+
+            console.time("test");
+              //打印2-100之间的所有质数
+         for (i = 2; i <= 10000; i++) {
+            var prime = true;
+            //用Math.sqrt(i)，缩小取值范围
+             for (j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    prime = false;
+                    //一旦进入判断，则证明i不可能是质数，此时循环再执行就没有意义了
+                    //可以使用break来结束循环
+                   break;
+                }
+            }
+            if (prime) {
+                document.write(i + "<br/>");
+            }
+        }
+        //终止计时器; console.timeEnd();需要一个计时器的名字作为参数
+        console.timeEnd("test");
+
+
+        /*
+         *  1  36
+         *  2  18
+         *  3  12
+         *  4  9
+         *  6  6
+         */
+
+        //可以通过 Math.sqrt()对一个数进行开方
+        /*var result=Math.sqrt(4);
+        console.log("result="+result);*/
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

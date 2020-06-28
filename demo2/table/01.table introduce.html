@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格的简介</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+     <!--
+        表格的在日常生活中使用非常多，比如excel就是专门创建表格的工具
+        表格就是用来表示一些格式化的数据，课程表、银行对账表
+        在网页中也可以来创建不同的表格
+     -->
+
+<!--
+       在HTML中，使用table标签来创建一个表格
+-->
+  <table border="1" width="40%" align="center">
+
+<!--
+        在table标签中使用tr表示，表格中的一行，有几行就有几个tr
+-->
+      <!--
+               在tr 中需要使用td来创建一个单元格，有几个单元格就有几个td
+           -->
+       <tr>
+
+           <td>A1</td>
+           <td>A2</td>
+           <td>A3</td>
+           <td>A4</td>
+       </tr>
+      <tr>
+
+          <td>B1</td>
+          <td>B2</td>
+          <td>B3</td>
+          <!--rowspan表示纵向的合并单元格，合并行-->
+          <td rowspan="2">B4</td>
+      </tr>
+
+      <tr>
+
+          <td>C1</td>
+          <td>C2</td>
+          <td>C3</td>
+
+      </tr>
+      <tr>
+
+          <td>D1</td>
+          <td>D2</td>
+          <td colspan="2">D3</td>
+          <!-- colspan横向的合并单元格，合并列-->
+
+      </tr>
+     </table>
+</body>
+</html>

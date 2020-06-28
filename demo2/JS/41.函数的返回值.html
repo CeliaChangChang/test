@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数的返回值</title>
+    <script type="text/javascript">
+        /*
+         *  return后的值将会作为函数的执行结果返回，可以定义一个变量，来接收结果
+         *  可以使用return来设置函数的返回值
+         *  语法：
+         *      return 值
+         *
+         *  return后的值将作为函数的执行结果返回
+         *  可以定义一个变量来接收结果
+         *  如果return语句后不跟任何值就相当于返回一个undefined，
+         *  如果函数中不写return，则也会返回undefined
+         *  return后可以跟任意类型的值，也可以是一个对象
+         */
+        /*
+        function sum(a, b, c) {
+            //alert(a+b+c);
+            var d = a + b + c;
+            return d;
+
+        }
+
+        //调用函数
+        //变量result的值就是函数的执行结果
+        //函数返回什么result的值就是什么
+        sum(1, 2, 3);
+        */
+
+
+        /*
+        function f() {
+            alert("函数要执行了");
+            for (var i = 0; i < 5; i++) {
+               //console.log(i);
+                if (i == 2) {
+                    //使用break可以退出当前的循环（for循环）
+                    // break;
+                    // continue用于跳过当次循环
+                    //continue;
+
+                    // 使用 return可以结束整个函数
+                    return;
+                }
+                console.log(i);
+            }
+            alert("函数要执行了。。");
+        }
+
+        f();
+
+
+        */
+
+
+        /*
+         *return后可以跟任意类型的值，也可以是一个对象,也可以是一个函数
+         */
+        
+        /*
+        function f1() {
+
+            var obj={name:"沙和尚"};
+            return obj;
+        }
+         var a=f1();
+        console.log("a="+a.name);
+        */
+
+
+
+        
+        function f2() {
+            //函数内部声明一个函数
+            function f3() {
+                alert("我是f3");
+            }
+            //将烦f3函数对象作为返回值返回
+            return f3;
+            
+        }
+         a=f2();
+        //console.log(a);
+        //a();
+        f2()();
+
+
+
+        //求圆的面积
+        function  calculateArea(r) {
+            var area;
+            if (r<=0){
+                return 0;
+            }else {
+                area=Math.PI*r*r;
+                return area;
+            }
+
+        }
+        var raduis=5.2;
+        var theArea=calculateArea(raduis);
+        console.log("The area is:"+theArea);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
