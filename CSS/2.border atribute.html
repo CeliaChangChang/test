@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框简写属性</title>
+    <style type="text/css">
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bbffaa;
+            /*
+             * 设置边框
+             * 大部分的浏览器中，边框的宽度和颜色都是有默认值，而边框的样式的默认值为none
+             */
+            /* border-width: 10px;
+            border-color: red;
+             border-style: solid;
+            */
+
+            /*border-style: solid;*/
+            /*
+             *border
+             * -边框的简写样式，通过它可以同时设置四个边框的颜色，宽度，样式
+             * - 而且没有任何的顺序要求
+             * border-xxx
+             * border-top  border-bottom border-left border-right
+             *  可以单独设置四个边的样式，规则和border一样，只不过它只对一边生效
+             */
+             /* border:red 10px solid; */
+           /* border-top: red 10px solid;*/
+            border:red 10px solid;
+            border-right: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <div class="box1">
+
+   </div>
+</body>
+</html>
