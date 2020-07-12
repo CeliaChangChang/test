@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d4beb6aa-ab0a-4165-8fce-40564f7fcc88" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML4 File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZshjXoclJREscNmTWQ9cUL8exB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebWorkspace\demo2\table" />
+      <recent name="D:\WebWorkspace\demo2\form" />
+      <recent name="D:\WebWorkspace\demo2\CSS" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.15.自增和自减.html">
+    <configuration name="15.自增和自减.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo2/JS/15.自增和自减.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="19.training1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/demo2/CSS/19.training1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/demo2/JS/13.%E7%AE%97%E6%95%B0%E8%BF%90%E7%AE%97%E7%AC%A6.html?_ijt=vja7o0bqi5upuqlklgocftm8fs" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/JS">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.test" />
+      <item itemvalue="JavaScript Debug.19.training1.html" />
+      <item itemvalue="JavaScript Debug.15.自增和自减.html" />
+      <item itemvalue="Node.js.test.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.15.自增和自减.html" />
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="JavaScript Debug.19.training1.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4beb6aa-ab0a-4165-8fce-40564f7fcc88" name="Default Changelist" comment="" />
+      <created>1580652072273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580652072273</updated>
+      <workItem from="1580652073526" duration="1773000" />
+      <workItem from="1580821576956" duration="5472000" />
+      <workItem from="1580880208077" duration="24649000" />
+      <workItem from="1580974908665" duration="1295000" />
+      <workItem from="1580976428449" duration="17394000" />
+      <workItem from="1581059734970" duration="2910000" />
+      <workItem from="1581421184984" duration="7530000" />
+      <workItem from="1581494978265" duration="322000" />
+      <workItem from="1581495461364" duration="597000" />
+      <workItem from="1581496186445" duration="12000" />
+      <workItem from="1581496463077" duration="603000" />
+      <workItem from="1581505746630" duration="848000" />
+      <workItem from="1581664042817" duration="15269000" />
+      <workItem from="1581693010119" duration="36000" />
+      <workItem from="1581761400470" duration="15738000" />
+      <workItem from="1581783752946" duration="243000" />
+      <workItem from="1581825767242" duration="2561000" />
+      <workItem from="1581840643560" duration="16968000" />
+      <workItem from="1581869454720" duration="255000" />
+      <workItem from="1581909009550" duration="20859000" />
+      <workItem from="1582012859282" duration="9316000" />
+      <workItem from="1582262935645" duration="7438000" />
+      <workItem from="1582772569696" duration="9846000" />
+      <workItem from="1582859223618" duration="2537000" />
+      <workItem from="1582900652440" duration="1607000" />
+      <workItem from="1582951363149" duration="11763000" />
+      <workItem from="1583026695441" duration="9330000" />
+      <workItem from="1583057207449" duration="2467000" />
+      <workItem from="1583305278330" duration="8215000" />
+      <workItem from="1583398774384" duration="280000" />
+      <workItem from="1583399115841" duration="1706000" />
+      <workItem from="1583401388896" duration="12941000" />
+      <workItem from="1583466179292" duration="1715000" />
+      <workItem from="1583570438003" duration="4151000" />
+      <workItem from="1583652318153" duration="16145000" />
+      <workItem from="1583676689347" duration="3210000" />
+      <workItem from="1583746788226" duration="1380000" />
+      <workItem from="1583846495711" duration="6784000" />
+      <workItem from="1583934742248" duration="871000" />
+      <workItem from="1583978407224" duration="35005000" />
+      <workItem from="1584172661139" duration="11103000" />
+      <workItem from="1584198394589" duration="22000" />
+      <workItem from="1584239180788" duration="22508000" />
+      <workItem from="1584345454319" duration="5064000" />
+      <workItem from="1584513987164" duration="18477000" />
+      <workItem from="1584623698204" duration="6690000" />
+      <workItem from="1584680828345" duration="3882000" />
+      <workItem from="1584716445311" duration="1018000" />
+      <workItem from="1584780416312" duration="610000" />
+      <workItem from="1584862438261" duration="3339000" />
+      <workItem from="1584947169777" duration="3266000" />
+      <workItem from="1585036768284" duration="4536000" />
+      <workItem from="1585124273996" duration="7208000" />
+      <workItem from="1585188758463" duration="11148000" />
+      <workItem from="1585279219069" duration="4534000" />
+      <workItem from="1585575612014" duration="578000" />
+      <workItem from="1585576644497" duration="1271000" />
+      <workItem from="1585633847339" duration="13565000" />
+      <workItem from="1585724299747" duration="2204000" />
+      <workItem from="1585801989861" duration="25823000" />
+      <workItem from="1585881207406" duration="10532000" />
+      <workItem from="1586056261198" duration="13327000" />
+      <workItem from="1586150040509" duration="3639000" />
+      <workItem from="1586237621633" duration="5529000" />
+      <workItem from="1586314398283" duration="10257000" />
+      <workItem from="1586343173618" duration="4749000" />
+      <workItem from="1586409801408" duration="1942000" />
+      <workItem from="1586424865720" duration="1198000" />
+      <workItem from="1586510608724" duration="11371000" />
+      <workItem from="1586615742370" duration="599000" />
+      <workItem from="1586669826680" duration="10882000" />
+      <workItem from="1586742345201" duration="2492000" />
+      <workItem from="1586825200207" duration="3722000" />
+      <workItem from="1586939457114" duration="6791000" />
+      <workItem from="1587645452388" duration="741000" />
+      <workItem from="1587653708293" duration="60000" />
+      <workItem from="1587653792384" duration="25000" />
+      <workItem from="1588940259299" duration="357000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1588940289960">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588940289960" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1586344031293">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586344031293" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586517379849">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586517379849" />
+  </component>
+</project>

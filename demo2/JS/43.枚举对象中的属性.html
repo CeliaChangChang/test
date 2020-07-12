@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>枚举对象中的属性</title>
+    <script type="text/javascript">
+        /*
+         * 枚举对象的属性
+         * 使用for...in语句
+         *  语法：
+         *   for(var 变量 in 对象){
+         *    }
+         */
+        var obj={
+            name:"孙悟空",
+            age:18,
+            gender:"男",
+            address:"花果山",
+        };
+        for (var n in obj){
+            //console.log("属性名："+ n);
+            console.log("属性名："+ obj[n]);
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

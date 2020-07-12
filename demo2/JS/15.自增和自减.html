@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自增和自减</title>
+    <script type="text/javascript">
+        /*
+         *自增
+         *   通过自增可以使变量在自身的基础上真增加一
+         *   -对于一个变量自增后，原变量的值会立即自增1
+         *   -自增分成两种：
+         *         后++ (a++)
+         *         前++ （++a）
+         *       1.都会使原变量的值自增1
+         *       2.不同的是a++和++a的值不同
+         *        a++ 等于原变量的值（自增前的值）
+         *        ++a 等于原变量的新值（自增后的值）
+         *
+         *
+         *自减
+         *    通过自己可以是变量在自身的基础上减1
+         *     自减分成两种：
+         *     后--(a--)
+         *     前--(--a)
+         *      无论是a--还是--a，都会立即使原变量的值减1
+         *      不同的是a--和--a的值不同
+         *      a--是变量的原值(自减前的值)
+         *      --a是变量的新值（自减后的值）
+         *
+         *   注意：当自增/自减表达式参与其他运算时
+         *          -符号在前，变量先自增/自减，然后把新值赋值给表达式
+         *          -符号在后，先把值赋值给表达式，变量再自增/自减
+         *
+         */
+        var a = 1;
+        //使a自增1
+        //a++;
+        //++a;
+        // console.log(a++);
+        //console.log("++a= "+ ++a);
+        console.log("a++= " + a++);
+        console.log("a=" + a);
+        var c = 10;
+        //使c自增1，第一个c++是在10以上基础上自增
+        //console.log(c++);
+        //第二次c++，是在11的基础上自增
+        console.log(c++);
+        var d = 20;
+        console.log(++d);
+        console.log(++d);
+        //64=20 + 22 +22
+        // var result=d++ + ++d +d;
+
+        d = d++;
+        console.log("d=" + d); //20
+        var num = 10;
+        //num--;
+        // --num;
+        //console.log(num--);
+        console.log(--num);
+        console.log("num=" + num);
+
+
+        //自增和自减的练习
+        var n1 = 10, n2 = 20;
+        var n = n1++;
+        console.log("n=" + n);//10
+        console.log("n1=" + n1);//11
+        n = ++n1;
+        console.log("n=" + n);//12
+        console.log("n1=" + n1);//12
+        //n = n2--;
+        //console.log("n=" + n);//20
+        //console.log("n2=" + n2);//19
+        // n = --n2;
+        //console.log("n=" + n);//18
+        //console.log("n2=" + n2);//18
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逻辑运算符</title>
+    <script type="text/javascript">
+
+        /*
+         * JS中三种逻辑运算符：
+         *  ！ 非
+         *    - ！可以用来对一个值进行非运算
+         *      所谓的非运算就是对布尔值进行取反操作
+         *     true 变false   false变true
+         *     如果对一个值两次取反，他不会变化
+         *     如果对非布尔值进行运算，会先将转换成布尔值，然后再取反
+         *     可以将任意一个数据类型两次取反，将其转换成布尔值
+         *     原理和Boolean()函数一样
+         *
+         * && 与
+         *      &&可以对符号两侧的进行与运算并返回值
+         *    - 两个值中只要有一个值为false返回就是false
+         *      只有两个值都为true时，才会返回true
+         *      JS中的与属于“短路”的与
+         *          如果第一个值为false，则不会看第二个值
+         *
+         * \\ 或
+         *      ||可以对符号两侧的值进行或运算并返回结果
+         *       运算规则：
+         *      两个值中只要有true就返回true
+         *      两个值都为false才返回false
+         */
+        var a = false;
+        a = !a;
+        a = !!a;
+        console.log(typeof a);
+        console.log("a=" + a);
+        var result = true && false;
+
+        result = true && true;
+        result = true && false;
+        result = false && false;
+        // console.log("result=" + result);
+        //true &&alert("你看我出不出来！！")
+        //false &&alert("你看我出不出来！！")
+
+
+        //只要有一个true就返回true
+        result = false || false;
+        result = true || false;
+        result = true || true;
+        console.log("result=" + result);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

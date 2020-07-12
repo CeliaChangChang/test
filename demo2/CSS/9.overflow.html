@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <style type="text/css">
+    .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: #bbffaa;
+        /*overflow:scroll;*/
+
+        /*
+         * 子元素默认是存在父元素内容区中，
+         *   理论上讲子元素的最大内容区，可以等于父元素的内容区大小，如果子元素的大小超过了父元素的内容区
+         *   则超过大小会在父元素以外的位置显示，超出父元素的内容，我们称为溢出的内容
+         *
+         * 父元素默认是将溢出的内容在父元素外边显示
+         * 通过overflow可以设置父元素如何处理溢出的内容
+         *   可选值：
+         *         -visible，默认值，不会对溢出的内容做处理，元素会在父元素以外的位置显示
+         *         -hidden, 溢出的内容，会被修剪，不会显示
+         *         -scroll, 会为父元素添加滚动条，通过拖到滚动条来查看完整内容
+         *              - 该属性不论内容是否溢出，都会添加水平和垂直方向的滚动条
+         *         - auto，会根据需要自动添加滚动条
+         *                 需要水平添加水平
+         *                 需要垂直添加垂直，都不需要都不添加
+         */
+        overflow: auto;
+
+    }
+    .box2{
+        width: 100px;
+        height: 500px;
+        background-color: red;
+    }
+
+
+    </style>
+
+</head>
+<body>
+   <div class="box1">
+       <div class="box2"></div>
+   </div>
+
+</body>
+</html>

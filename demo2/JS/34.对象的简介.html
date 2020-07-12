@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象的简介</title>
+    <script type="text/javascript">
+        /*
+         * JS中的数据类型
+         *   1.string      字符串
+         *   2.number      数值
+         *   3.boolean     布尔值
+         *   4.undefined   未定义
+         *   5.null        空值
+         *    以上五种类似属于基本类型，只要不是上面五种，全部是对象
+         *
+         *   6.object    对象
+         *
+         *  使用基本数据类型，创建的变量都独立的，不能成为一个整体
+         *  对象属于一种复合的数据类型，在对象中可以保存多个不同的数据类型的属性
+         *
+         *对象的分类
+         *   1.内建对象
+         *          在ES标准中定义的对象，在任何的ES的实现中都可以使用
+         *       - 例如：Math,string ,number,boolean,function,object...
+         *   2.数组对象
+         *       -由JS的运行环境提供的对象，目前来讲主要是指浏览器提供的对象
+         *       -比如：BOM DOM
+         * 3.自定义对象
+         *       -由开发人员自己创建的对象
+         */
+        //创建对象
+        /*
+         *使用new关键字调用函数，是构造函数constructor
+         * 构造函数是专门用来创造对象的函数
+         * 使用typeof 检查一个对象时，会返回object
+         */
+        var obj = new Object();
+        //console.log(obj);
+        //向对象中添加对象
+        /*
+         * 在对象中保存值称为属性
+         *  向对象添加属性
+         *  语法：对象.属性名=属性值；
+         */
+        //向obj中添加一个name属性
+        obj.name = "孙悟空";
+        obj.gender = "男";
+        obj.age = 18;
+        /*
+         *读取对象中的属性
+         *   语法：对象.属性名
+         */
+        /*
+         *修改对象的属性值
+         *  语法：对象.属性名=新值
+         */
+        /*
+         *删除对象的属性
+         *  语法：delete 对象.属性名
+         */
+
+        obj.name = "tom";
+        delete obj.name;
+        console.log(obj.name);
+
+
+
+        //务必将对象定义在花括号里
+        var cat={
+            name:"fluffy"
+        };
+        //用冒号分隔属性名和属性值
+        var planet={
+            diameter:49528
+        };
+        //属性名可以是任何字符串，但通常遵循变量命名规则
+        var widget={
+            cost$:3.14,
+            //包含空格的字符串用作属性名时，必须用引号将其括起来
+            "on sale":true,
+        };
+        //在同一个对象中，不能包含两个同名的属性
+        var forecast={
+            highTemp:82,
+            //highTemp:82,     不对，这行不通！！
+
+        };
+        //用逗号分隔属性名和属性值对
+        var gadget={
+            name:"anvil",
+            isHeavy:true
+        };
+        //在最后一个属性值后面，不添加逗号
+        var superhero={
+            name:"Batman",
+            alias:"Caped Crusader"
+        };
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

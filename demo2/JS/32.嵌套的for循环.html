@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套的for循环</title>
+    <script type="text/javascript">
+        /*
+
+             通过程序，在页面中输出如下图形：
+             *
+             **
+             ***
+             ****
+             *****
+             ******
+
+
+
+
+         */
+        //向body中输入一个内容
+          //document.write("*****<br />");
+
+        /*
+        for (i=0;i<5;i++){
+            /*
+             * 在循环内部创建一个循环，来控制图形的宽度
+             * 目前我们外部的for循环执行一次，内部的就会执行5次
+             * 内层循环可以决定图形的宽度，执行几次图形的宽度就是多少
+             */
+        /*
+            for (j=0;j<i+1;j++){
+                document.write("* &nbsp&nbsp");
+            }
+            //输出换行
+            document.write("<br />");
+        }
+        */
+
+
+        /*
+               通过程序，在页面中输出如下图形：
+               *****
+               ****
+               ***
+               **
+               *
+
+         */
+
+
+        /*
+       for (i = 0;i<5;i++){
+           for (j=0;j<5-i;j++) {
+               document.write("*&nbsp&nbsp");
+           }
+            document.write("<br />");
+       }*/
+          /*
+           *打印99乘法表
+           * 1*1=1
+           * 1*2=2 2*2=4
+           * 1*3=3 2*3=6 3*3=9
+           *           ....9*9=81
+           */
+        //创建一个内层循环来控制乘法表的高度
+          for (i=1;i<=9;i++) {
+              //创建一个内层循环来控制乘法表的宽度
+              for (j=1;j<=i;j++){
+
+                 document.write("<span>"+j+"*"+i+"="+i*j+"</span>");
+              }
+              //输入换行
+              document.write("<br />")
+          }
+
+
+
+      /*
+       * 打印出1-100之间的质数
+       */
+          //打印2-100之间的所有质数
+         for (i=2;i<=100;i++){
+             var prime=true;
+             for (j=2;j<i;j++){
+                 if (i % j == 0){
+                  prime=false;
+                 }
+             } 
+             if (prime){
+                 document.write(i+"<br/>");
+             }
+         } 
+
+    </script>
+
+    <style type="text/css">
+        body{
+            width: 2000px;
+        }
+      span{
+          display: inline-block;
+          width: 100px;
+      }
+
+
+    </style>
+
+</head>
+<body>
+
+</body>
+</html>
