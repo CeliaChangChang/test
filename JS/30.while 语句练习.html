@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while语句练习</title>
+    <script type="text/javascript">
+
+        /*
+         *假如投资的几年利率为5%，试求从1000块增长到5000块，需要花多少时间
+         * 1000+1000*0.05
+         *
+         */
+        //定义一个变量，表示当前的钱数
+        var money = 1000;
+        //定义一个计数器
+        var count = 0;
+        while (money <= 5000) {
+            money *= 1.05;
+            count++;
+        }
+        console.log("一共需要" + count + "年");
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

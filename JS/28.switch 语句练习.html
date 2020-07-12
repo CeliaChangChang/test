@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch语句练习</title>
+    <script type="text/javascript">
+        /*
+         * 对于成绩大于60分的，输出“合格”，低于60分的，输出“不合格”
+         */
+        /*var score = 55;
+        switch (true) {
+            case score >= 60:
+                console.log("合格");
+                break;
+            default:
+                console.log("不合格");
+                break;
+        }*/
+
+
+        /*
+         * 从键盘接收整数参数，如果该数为1-7，打印对应的星期，否则打印非法数字
+         */
+        var num;
+        while (true) {
+            num = prompt("请输入一个正整数");
+            var trueOrfalse = num.match("^[0-9]{0,4}$");
+            if (trueOrfalse) {
+                num = parseInt(num);
+                if(num>0&&num<=7) {
+                    break;
+                }else {
+                    alert("请输入》0和《7数字");
+                }
+            } else {
+                alert("非法数字")
+            }
+        }
+        switch (num) {
+            case 1:
+                alert("星期一");
+                break;
+            case 2:
+                alert("星期二");
+                break;
+            case 3:
+                alert("星期三");
+                break;
+            case 4:
+                alert("星期四");
+                break;
+            case 5:
+                alert("星期五");
+                break;
+            case 6:
+                alert("星期六");
+                break;
+            case 7:
+                alert("星期日");
+                break;
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

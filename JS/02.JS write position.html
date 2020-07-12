@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS的编写位置与注释</title>
+
+    <!--可以将JS代码编写到外部的JS文件中，然后通过script标签引入
+    写到外部文件中，可以在不同页面中同时引用，也可以利用到浏览器的缓存机制，推荐使用的方式
+    script标签一旦引入外部的文件，就不能在编写代码，即使编写了浏览器也会忽略
+    如果需要则需要创建一个新的script标签用于内部的编码
+    -->
+    
+    
+    <!-- 内部脚本 -->
+    <script type="text/javascript" src="script.js">
+
+    </script>
+    <script type="text/javascript">
+    /*
+    *多行注释
+    * JS注释
+    *   多行注释，注释中的内容不会被执行，但是可以在源码中查看
+    *    要养成良好的编写注释的习惯，也可以通过注释来对一些代码进行简单的调试
+    */
+
+    //单行注释
+    //alert("hello");
+    document.write("hello");
+
+    console.log("hello");//该语句用来在控制台输出一个日志
+        /*
+         *1.JS中严格区分大小写
+         * 2.JS每一条语句以分号（；）结尾
+         *       如果不写分号，浏览器会自动添加，但是会消耗一些系统资源，
+         *        而且有时候浏览器会加错分号，所以在开发中，分号（英文状态下）必须写
+         * 3.JS中会忽略多个空格和换行，所以我们可以利用空格和换行对代码进行格式化
+         */
+    </script>
+    
+    <!--可以将js代码编写到script标签中，
+    <script type="text/javascript" >
+        alert("我是script标签中的代码");
+    </script>-->
+</head>
+<body>
+
+
+    <script>
+//   可以将JS代码写在onclick标签的属性中
+//      当我们点击按钮时，js代码就会执行命令
+
+//      虽然代码可以写在标签的属性中，但他们属于结构和行为的耦合，不推荐使用
+//  
+    <button onclick="alert('讨厌，你点我干嘛~' );" >点我一下</button>
+
+// 可以将JS代码写在超链接的href的属性中，这样点击超链接的时候，会执行JS代码
+// 
+<a href="javascript:alert('让你点你就点！！！');">你也点我一下</a>
+<a href="javascript：;">你也点我一下</a>
+
+</script>
+
+</body>
+</html>

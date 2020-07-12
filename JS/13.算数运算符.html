@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>算数运算符</title>
+    <script type="text/javascript">
+        /*
+         *运算符也叫操作符
+         *     通过运算符可以一个或者多个进行运算
+         * 比如：typeof就是一个运算符，可以用来获得一个值的类型
+         * 它会将该值的类型以字符串的形式返回
+         *  number string boolean undefined object
+         *
+         * 算数运算符
+         *   当为非number的相加运算,会先将这些值转换成number在做运算
+         *      任何值与NuN相加都得NuN
+         *  +
+         *    + 可以对两个值进行加法运算，并将结果返回
+         *      如果对两个字符串进行加法运算，则会做拼串操作
+         *       任何的值和字符串做加法运算，都会先转换成字符串，然后再和字符串做拼串的操作
+         *  -
+         *    - 可以对两个值进行减法运算，并将结果返回
+         *
+         *  *
+         *    -可以对两个值进行乘法运算，并将结果返回
+         *  /
+         *    -可以对两个值进行减法运算，并将结果返回
+         *  %
+         *    -取模运算（取余数）
+         */
+        var a= 123;
+        var result=typeof a;
+        console.log(result);
+        //console.log(typeof result);
+        result=a+1;
+        result=456+789;
+        result=true+1;
+        result=true+false;
+        result=2+NaN;
+        result=2+null;
+        result="123"+"456";
+        //var str="锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦";
+        result=123+"hello";
+        result=true+"1";
+        //任何值和字符串相加都会转换成字符串，并做拼串操作
+        /*
+         * 可以利用这一特点，来将任意一个值转换成string类型
+         * 任意值+“”，将其转换成string，一种隐式的转换，有浏览器自动完成，实际上是调用了sting()函数
+         *
+         *
+         */
+        var c=123;
+        c=c+"";
+
+        //console.log(c);
+        //console.log(typeof c);
+        //console.log("c="+c);
+        result=1+2+"3";//33
+        result="1"+2+3;//123
+        result=100-true;
+        result=100-"1";
+        result=2*"8";//16
+        result=2*undefined;//NaN
+        result=2*null;//0
+        result=4/2;
+        result=3/2;
+        /*
+         *任何值做- * 都会自动转换成number
+         * 可以通过为一个值-0，*1，/1将其转换成Number
+         */
+        var d="123";
+         d=d-0;
+        //console.log("result="+result);
+        /*console.log(typeof d);
+        console.log(d);*/
+        result=9%3;
+        result=9%4;
+        result=9%5;
+        console.log("result="+result);
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

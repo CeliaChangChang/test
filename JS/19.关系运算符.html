@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关系运算符</title>
+    <script type="text/javascript">
+        /*
+         * 非数值的情况
+         *   - 对于非数值的比较，会将其转换成数字之后作比较
+         *      如果符号两侧的值都是字符串时，不会将其转换成数字进行比较
+         *       而是将分别比较字符的串中字符的unicode编码
+         *
+         */
+        var result = 5 > 10;
+
+        // console.log(1>true);//false
+        //console.log(1>=true);//true
+        //console.log(1>="0");//true
+        // console.log(10>null);//true
+        //console.log(10>"hello");//false
+
+        //任何值和NaN做任何比较都是false
+        //console.log(10<="hello");//false
+        // console.log(true>false);//true
+
+        //如果比较两个字符串型的数字，可能会得到不可预期的结果
+        //注意：   在比较两个字符串型的数字时，一定要转型,(特别是购物的项目)
+        console.log("1133344556" < +"5");//false
+
+        //比较两个字符串，比较的是两个字符串的字符编码
+        // console.log("a"< "b");//true
+
+        //比较字符编码的时，是一位一位进行比较,如果两位一样，则比较下一位借用它来对我们英文进行排序
+       //console.log("bbc" < "b");//false
+
+       //比较中文时没有意义
+       // console.log("你" < "我");//false
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

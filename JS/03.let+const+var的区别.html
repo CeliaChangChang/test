@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        //1.var定义的变量，可以重定义，也可以修改
+         var a=10;
+         var a=20;
+
+       console.log(a);
+       //2.let定义的变量，不可以重定义，但可以修改
+        let b=30;
+        //let b=40;   报错，不能重定义
+            b=50;   //可修改
+        console.log(b);
+
+        //3.const 定义的变量，不可以重定义，不可以修改
+        const c=100;
+        //const c=200;  未捕获的语法错误，不可以重定义
+         //     c=300;   报错，不可以修改
+        console.log(c);
+
+        
+
+
+    </script>
+</body>
+</html>

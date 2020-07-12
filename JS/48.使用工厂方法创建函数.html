@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用工厂方法创建函数</title>
+    <script type="text/javascript">
+        /*
+         *创建一个对象
+         */
+         var obj={
+            name:"孙悟空",
+            age:18,
+            gender:"男",
+            sayName:function () {
+                alert(this.name);
+            }
+        };
+        var obj2={
+            name:"猪八戒",
+            age:28,
+            gender:"男",
+            sayName:function () {
+                alert(this.name);
+            }
+        };
+
+        //全局的obj
+        var obj3={
+            name:"沙和尚",
+            age:38,
+            gender:"男",
+            sayName:function () {
+                alert(this.name);
+            }
+        };
+
+
+        obj3.sayName();
+        /*
+         *使用工厂方法创建对象
+         *   通过该方法可以大批量的创建对象
+         */
+        function  createPerson(name,age,gender) {
+          //创建新的对象
+            var obj=new Object();  //局部
+            //向对象中添加属性
+                obj.name=name,
+                obj.age=age,
+                obj.gender=gender,
+                obj.sayName=function () {
+                alert(this.name);
+            };
+
+            //将新的对象返回
+            return obj;
+        }
+           var obj=createPerson("猪八戒",28,"男");
+           var obj2=createPerson("白骨精",16,"女");
+           var obj3=createPerson("蜘蛛精",18,"女");
+        console.log(obj);
+        console.log(obj2);
+        console.log(obj3);
+          obj3.sayName();
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

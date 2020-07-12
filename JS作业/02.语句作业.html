@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+   
+   //1.输出h1到h6的标题
+   for(var i=1;i<=6;i++){
+      document.write("<h"+i+ ">"+"标题"+i+"</h"+i+">");
+  
+   }
+  // 2.求解1—100和
+   var sum1=0;
+   for(var i=1;i<=100;i++){
+       sum1=sum1+i;
+       
+   }
+   console.log("1-100和："+sum1);
+
+   //3.求解 1-100 奇数和
+   var sum2=0;
+   for (let i=1;i<=100;i++){
+        if(i% 2!= 0){ 
+        sum2=sum2+i;
+       //console.log(i);
+       }   
+   }
+   console.log("1-100奇数和："+sum2);
+
+
+
+   //4.求解1-100中能被3整除的所有数字的和
+   
+    var sum3=0;
+    for (let i=1;i<=100;i++){
+        if(i%3===0){
+        // console.log(i);
+           sum3=sum3+i;
+        }
+    }
+    console.log(sum3);
+
+
+    //5.求解1-100 能被3和5同时整除的数字的和
+    var sum4=0;
+    for (let i=1;i<100;i++)
+      if (i%3===0 && i%5===0){
+            //console.log(i);
+             sum4=sum4+i;
+      }
+      console.log(sum4);
+
+// 6.（分支结构）定义一个变量表示“分数” 并给其赋值，在页面中是根据分数高低不
+// 同输出如下文字：优秀（>=90），良好（>=80），中等（>=70），及格（>=60），不及格（其他情况）。
+     
+     var score=prompt("请输入你的一个分数：");
+       if (score>=90){
+              alert("优秀");
+       }else if (score>=80){
+              alert("良好");
+       }else if (score>=70){
+              alert("中等");
+       }else if (score>=60){
+              alert("及格");
+       }else {
+              alert("不及格");
+       }
+
+// 7.（分支结构）根据一个人的存款的多少决定使用什么交通工具：如果我有10万元以上，就买小汽车上班或者如果我有5000元以上，
+//我就买摩托上班，或者如果我有300元 以上，我就买自行车上班，或者如果我有20元以上，我就坐公交上班，
+//否则，我就只好 步行上班提示：使用一个变量表示其存款数，对该变量进行判断以输出所采用的交通工具；
+
+
+
+        var Deposit= prompt("输入你的存款：");
+        if (Deposit>100000){
+            alert("买小汽车上班");
+        }else if (Deposit>5000 && Deposit<=100000){
+            alert("买摩托上班");
+        }else if (Deposit>300 && Deposit<=5000){
+            alert("买自行车上班");
+        }else if (Deposit>20 && Deposit<=300){
+            alert("座公交上班");
+        }else{
+            alert("走路上班");
+        }
+
+
+
+ // 8.（循环）输出1-100之间能被3整除的数。
+
+   
+    for (let i=1;i<=100;i++){
+        if(i%3===0){
+            console.log(i);
+        }
+    }
+   
+   
+//9.（循环）计算1-1000之间能被3整除的偶数的个数。
+      var Num=0;
+      for (let i=1;i<=1000;i++){
+          if (i%3===0 && i%2===0){
+             // console.log(i);
+              Num++;
+          }
+      }
+      console.log(Num);
+
+
+
+//10.（流程：分支与循环）输出从2000年（含）到3000年（含）间的所有闰年。
+//提示：闰年：400的倍数 或者 是4的倍数不是100的倍数（选做）
+      
+      for (let i=2000; i<=3000;i++){
+          if(i%400===0){
+              console.log(i);
+          }else if(i%4===0 && i%100!=0){
+              console.log(i);
+          }
+      }
+        
+
+
+//11.（循环，简单逻辑）写一个程序输出1到100这些数字。但是遇到数字为3的倍数的时
+// 候，输出“三”替代数字，为5的倍数用“五”代替，既是3的倍数又是5的倍数则输出“三五”。（选做）
+       
+    for (let i=1;i<=100;i++){
+        if(i%3===0 && i%5===0){
+            console.log(i);
+            document.write("三五"+"<br>");
+
+        }else if (i%3===0){
+            console.log(i);
+            document.write("三"+"<br>");
+
+        }else if (i%5===0){
+            console.log(i);
+            document.write("五"+"<br>");
+        }
+
+    }
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

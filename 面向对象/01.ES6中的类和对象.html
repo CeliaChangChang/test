@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>类和对象</title>
+    <script type="text/javascript">
+        /*目标：
+         * 1.能说出什么是面向对象
+         * 2.能够说出类和对象的关系
+         * 3.能够使用class创建自定义类
+         * 4.能够说出什么是继承
+         *
+         */
+
+
+
+        //创建类 class
+        /*语法：
+         * class name{
+         *      //class body
+         * }
+         */
+        class Star {
+            constructor(uname,age) {
+                this.unmame = uname;
+                this.age=age;
+            }
+            sing(song){
+                //console.log("我唱歌");
+                console.log(this.unmame+song);
+            }
+
+        }
+
+        //创建实例
+        /*语法：
+         *   var xx =new name();
+         *   注意：类必须使用new实例化对象
+         */
+       // new Star();
+        var ldh=new Star("刘德华",38);
+        var zxy=new Star("张学友",28);
+        console.log(ldh);
+        console.log(zxy);
+        ldh.sing("冰雨");
+        zxy.sing("李香兰");
+
+        //总结
+        /*
+         *  1.通过class关键字可以创建类，类名我们通常习惯定义首字母大写
+         *  2.类里面有一个constructor函数，可以接受传递的参数，也可以返回实例的对象
+         *  3.constructor函数只要 new 生成实例时，就会自动调用这个函数，如果我们不写函数，类也会自动生成这个函数
+         *  4.生成实例，new 不能省略
+         *  5.最后注意语法规范，创建类，后面不要加小括号，生成实例，类后面需要加小括号，构造函数不需要写function
+         */
+
+        //1.类里面所有函数不需要写function
+        //2.多个函数之间的方法不需要添加逗号隔开
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

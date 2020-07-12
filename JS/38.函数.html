@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+    <script type="text/javascript">
+        /*
+         *函数
+         *   - 函数也是对象
+         *  -函数中可以封装一些功能（代码），在需要时可以执行这些功能（代码）
+         */
+          function  bark(name,weight) {
+              if (weight>20){
+                  console.log(name+"says WOOF WOOF");
+              }else{
+                  console.log(name+"says woof woof");
+              }
+          }
+          bark("rover",23);
+
+
+
+         function doIt(param) {
+            param=2;
+         }
+          var test=1;
+         doIt(test);
+         console.log(test);//  1
+
+      //无名装置
+        function clunk(times) {
+            var num=times;
+            while (num>0){
+                display("clunk");
+                num = num - 1;
+            }
+        }
+        function tingamajig(size) {
+            var facky=1;
+            clunkCounter=0;
+            if (size==0){
+                display("clank");
+            }else if (size==1){
+                display("thunk");
+            }else{
+                while(size>1){
+                    facky = facky * size;
+                    size = size - 1;
+                }
+            }
+          clunk(facky);
+        }
+         function display(output) {
+            console.log(output);
+            clunkCounter=clunkCounter+1;
+
+         }
+           var clunkCounter=0;
+              tingamajig(5);
+              console.log(clunkCounter);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
