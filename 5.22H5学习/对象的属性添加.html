@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+     //定义对象
+     var obj={};
+
+
+     //添加属性
+     obj.name='张三';
+     obj['age']=88;//动态属性
+
+     //添加方法
+     obj.run=function() {
+         console.log("这个人会跑步");
+     }
+
+     //使用方法
+     obj.run();
+     console.log(obj);
+
+     //使用属性
+     console.log(obj.name);
+
+     //修改属性
+     obj.name='老王';
+     console.log(obj);
+     obj["name"]='隔壁老王';
+     console.log(obj);
+
+    //删除属性
+    delete obj.name;
+    console.log(obj);
+
+
+     //练习：定义一个电脑对象，拥有颜色、价格、品牌属性，拥有启动方法
+    var obj={};
+    obj.name="computer";
+    obj.color="grey";
+    obj.price="14499";
+    obj.mark="apple";
+    obj.start=function(){
+        console.log("启动");
+    }
+    obj.start();
+    console.log(obj);
+    console.log(obj.name);
+
+    
+    </script>
+</body>
+</html>
