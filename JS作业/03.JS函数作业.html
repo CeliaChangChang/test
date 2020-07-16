@@ -7,24 +7,120 @@
 </head>
 <body>
     <script>
-        //1.是否可以把函数赋值给一个变量，为什么？
+        //1.编写函数实现返回两个数中的最大值
+        function num1 (a,b){
+            if (a>b){ 
+                 return a;
+            }else{
+                return b;
+            }
+
+        }
+       
+        console.log(num1(10,6));
+
+        //2.编写函数实现返回三个数的平均值
+
+
+            function getAvgrage(num5,num6,num7){
+               return (num5+num6+num7)/3;
+            }
+            
+            console.log(getAvgrage(8,9,6));
+            
+
+
+
+
+
+        //3.编写函数打印出任意行的星星塔
+           function starTower(row){
+               for (let i=0;i<row;i++){//输出行
+                
+               for (let j=0;j<i;j++){ //输出列
+                   document.writeln('*');   
+               }
+               document.writeln('<br/>');
+                  
+           }
+           }
+          starTower(6);
+
+
+
+
+
+        //4.是否可以把函数赋值给一个变量，为什么？
+          //函数可以赋值给变量
+
+
+
+
+
+        //5.封装函数实现返回三个数的和
+        function getMix(num8,num9,num10){
+           return  (num8+num9+num10);
+           
+
+        }
+     
+        console.log(getMix(1,7,3));
+           
+
+
+
+
+        //6.封装函数实现返回三个数的最大值
+
+
+              function getMax(num11,num12,num13){
+                  var max=0;
+                  if (num11>num12){
+                      max=num11;
+                  }if (num11>num13){
+                      return max;
+                  }else{
+                      return num13;
+                  }if (num12>num13){
+                      return max;
+                  }else{
+                    return num13;
+                  }
+              }
+              
+               console.log(getMax(9,10,12));      
+
+
+              function getMax2(a,b,c){
+                  var t=0;
+                  if (b>a){
+                     t=b;
+                     b=a;
+                     a=t;
+                  }
+                  if(c>a){
+                    t=c;
+                    c=a;
+                    a=t;
+                  }
+                  console.log(t);
+              }
+             getMax2(8,7,9);
+
+
           
-
-
-
-        //2.封装函数实现返回三个数的和
-
-
-
-        //3.封装函数实现返回三个数的最大值
-
+              
+              
+            
 
 
         
-        //4.全局变量和局部变量的区别
+        //7.全局变量和局部变量的区别
+        //全局变量：函数外定义的变量，整个程序中都可以使用。
+        //局部变量：在某个特定的函数中定义的变量，只能够在函数内部使用
 
 
 
-    </script>
+            </script>
 </body>
 </html>
